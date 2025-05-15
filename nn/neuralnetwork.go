@@ -6,8 +6,11 @@ import (
 )
 
 type NeuralNetwork struct {
+	// input/output shape 
 	input_size, output_size int
+	// hidden layer
 	linear []forward.Linear
+	// last layer
 	out_linear forward.Linear
 }
 

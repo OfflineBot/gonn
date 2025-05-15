@@ -8,12 +8,17 @@ import (
 
 type Linear struct {
 	activation, derivative func(matrix2.Matrix2[float32]) matrix2.Matrix2[float32]
+	// shape
 	input, output int
 	weight matrix2.Matrix2[float32]
 	bias matrix1.Matrix1[float32]
 
+	// forwarded
 	z *matrix2.Matrix2[float32]
+	// applied activation function
 	a *matrix2.Matrix2[float32]
+	// backwarding
+	delta *matrix2.Matrix2[float32]
 }
 
 
