@@ -7,18 +7,21 @@ import (
 )
 
 
+// Testing Area
 func main() {
-	a := matrix2.NewMatrix2([][]float32 {
-		[]float32 {1.0, 1.0},
-		[]float32 {1.0, 1.0},
+	input := matrix2.NewMatrix2([][]float32 {
+		{1.0, 2.0},
+		{4.0, 3.0},
 	});
 
-	x := nn.NewNeuralNetwork(2, 1)
-	x.AddLinear(4, activation.ReLU, activation.DerivReLU)
-	x.AddLinear(8, activation.ReLU, activation.DerivReLU)
-	x.AddLinear(16, activation.ReLU, activation.DerivReLU)
-	x.PrintLayout()
-	out := x.ForwardLinear(*a)
+	nn := nn.NewNeuralNetwork(2, 1)
+
+	nn.AddLinear(2, activation.ReLU, activation.DerivReLU)
+
+	out := nn.ForwardLinear(input)
+	nn.BackwardLinear()
+	nn.UpdateParameter()
+
 	out.Println()
 }
 
