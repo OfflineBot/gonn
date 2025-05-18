@@ -41,4 +41,10 @@ func (m* Linear) GetBias() matrix1.Matrix1[float32] {
 	return m.bias
 }
 
+func (m* Linear) SetDelta(delta matrix2.Matrix2[float32]) {
+	m.delta = &delta
+}
 
+func (m* Linear) GetDelta() matrix2.Matrix2[float32] {
+	return *m.delta
+}

@@ -6,3 +6,7 @@ github.com/OfflineBot/gomat v0.0.0-20250514235113-1adddac70c70 h1:hyM03LqyPIBCEE
 github.com/OfflineBot/gomat v0.0.0-20250514235113-1adddac70c70/go.mod h1:TY/sY/NlOLZP+MvP6BQcziGR1BMf+NgmzYarjLhwR3I=
 github.com/OfflineBot/gomat v0.0.0-20250514235203-35bf1d1a464c h1:I9XKq1cxv+7qMb0CRt6RViEb46K8igFR85QmA+Ddtv8=
 github.com/OfflineBot/gomat v0.0.0-20250514235203-35bf1d1a464c/go.mod h1:TY/sY/NlOLZP+MvP6BQcziGR1BMf+NgmzYarjLhwR3I=
+github.com/OfflineBot/gomat v0.0.0-20250515101043-ed0dba1404ff h1:oYsSVMt8qIyh/KEm5nzQIOC6bwZchYzAH58nKOUpJnQ=
+github.com/OfflineBot/gomat v0.0.0-20250515101043-ed0dba1404ff/go.mod h1:TY/sY/NlOLZP+MvP6BQcziGR1BMf+NgmzYarjLhwR3I=
+github.com/OfflineBot/gomat v0.0.0-20250518165257-42afd9e1c550 h1:YJzvVu5zKwQ0/THvYySovjhdoPvZ73WaGY3Z8+EhrK8=
+github.com/OfflineBot/gomat v0.0.0-20250518165257-42afd9e1c550/go.mod h1:TY/sY/NlOLZP+MvP6BQcziGR1BMf+NgmzYarjLhwR3I=

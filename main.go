@@ -13,14 +13,21 @@ func main() {
 		{1.0, 2.0},
 		{4.0, 3.0},
 	});
+	
+	truth := matrix2.NewMatrix2([][]float32 {
+		{1.0},
+		{4.0},
+	});
 
 	nn := nn.NewNeuralNetwork(2, 1)
 
 	nn.AddLinear(2, activation.ReLU, activation.DerivReLU)
+	nn.AddLinear(4, activation.ReLU, activation.DerivReLU)
 
 	out := nn.ForwardLinear(input)
-	nn.BackwardLinear()
-	nn.UpdateParameter()
+	nn.PrintFowarded()
+	nn.BackwardLinear(out, *truth)
+	//nn.UpdateParameter()
 
 	out.Println()
 }
