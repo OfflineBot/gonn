@@ -25,7 +25,7 @@ func main() {
 	nn.AddLinear(4, activation.ReLU, activation.DerivReLU)
 
 	out := nn.ForwardLinear(input)
-	nn.PrintFowarded()
+	//nn.PrintFowarded()
 	nn.BackwardLinear(out, *truth)
 	//nn.UpdateParameter()
 
